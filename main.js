@@ -9,8 +9,14 @@
 chrome.storage.local.get(['courses', 'lastUpdate'], (data) => {
     if (data.courses) {
         render(data.courses);
-        let time = new Date(data.lastUpdate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        document.getElementById('timestamp').innerText = `Updated: ${time}`;
+        let dateTime = new Date(data.lastUpdate).toLocaleString([], {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        document.getElementById('timestamp').innerText = `Updated: ${dateTime}`;
     }
 });
 
