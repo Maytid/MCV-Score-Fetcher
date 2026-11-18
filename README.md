@@ -12,7 +12,7 @@ Instead of manually going through each course's portfolio, this extension fetche
 Since this extension is not available on the Chrome Web Store, you can install it manually in developer mode:
 
 1. Download this repository as a `.zip` file and extract it, or clone it via git:
-   `git clone https://github.com/Maytid/mcv-score-ui.git`
+   `git clone https://github.com/Maytid/mcv-score-fetcher.git`
 2. Open Chrome and go to `chrome://extensions/`.
 3. Turn on **Developer mode** in the top right.
 4. Click the **Load unpacked** button in the top left.
