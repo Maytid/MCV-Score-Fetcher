@@ -94,7 +94,13 @@ document.getElementById('fetchBtn').onclick = async () => {
         } else if (data) {
             chrome.storage.local.set({ courses: data, lastUpdate: Date.now() });
             render(data);
-            let time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            let time = new Date().toLocaleString([], {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
             document.getElementById('timestamp').innerText = `Updated: ${time}`;
         }
     });
