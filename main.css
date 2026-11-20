@@ -117,3 +117,9 @@ button:disabled #btnText {
     font-size: 0.875rem;
     margin-top: 12px;
 }
+.grade {
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-width: 36px;
+    text-align: center;
+}
